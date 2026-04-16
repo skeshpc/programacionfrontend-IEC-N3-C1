@@ -1,0 +1,47 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background-color: #f0f0f0; font-family: Arial, sans-serif; display: flex; justify-content: center; padding: 20px; }
+
+/* Contenedor principal */
+.cv-container { background-color: white; width: 800px; border: 1px solid black; }
+
+/* Cabecera */
+.header { display: flex; align-items: center; padding: 30px; gap: 20px; }
+
+/* ESTO ARREGLA TU FOTO GIGANTE */
+.photo-container { 
+    width: 120px; 
+    height: 120px; 
+    border-radius: 50%; 
+    border: 1px solid black; 
+    overflow: hidden; 
+    flex-shrink: 0; /* Evita que se deforme */
+}
+.photo-container img { 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+}
+
+.header-text h1 { font-size: 24px; }
+.subtitle { color: #4a6fa5; font-size: 12px; font-weight: bold; }
+
+/* Cuerpo */
+.main-body { display: flex; border-top: 1px solid black; border-bottom: 1px solid black; }
+.sidebar { width: 220px; border-right: 1px solid black; padding: 20px; }
+.content { flex: 1; padding: 20px; }
+
+h2, h3 { border-bottom: 1px solid black; padding-bottom: 5px; margin-bottom: 15px; }
+h3 { font-size: 16px; }
+h2 { font-size: 18px; }
+
+ul { list-style: none; font-size: 13px; }
+ul li { margin-bottom: 8px; }
+ul li::before { content: "— "; }
+
+.job-entry { margin-bottom: 15px; }
+.job-title { font-weight: bold; font-size: 14px; }
+.job-date { font-size: 12px; color: #555; }
+.job-desc, .description { font-size: 13px; line-height: 1.5; }
+
+/* Pie de página */
+.footer { display: flex; justify-content: space-around; padding: 15px; font-size: 13px; }

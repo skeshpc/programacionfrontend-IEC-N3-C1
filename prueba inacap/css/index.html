@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae - Bastián Alonso Peña Cárcamo</title>
+    <style>
+        /* ESTILOS INTERNOS PARA EVITAR FALLOS DE RUTA */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body { 
+            background-color: #f0f0f0; 
+            font-family: Arial, sans-serif; 
+            display: flex; 
+            justify-content: center; 
+            padding: 20px; 
+        }
+
+        .cv-container { 
+            background-color: white; 
+            width: 800px; 
+            border: 2px solid black; 
+        }
+
+        /* CABECERA */
+        .header { 
+            display: flex; 
+            align-items: center; 
+            padding: 30px; 
+            gap: 25px; 
+        }
+
+        /* ESTO HACE TU FOTO REDONDA Y PEQUEÑA */
+        .photo-container { 
+            width: 120px; 
+            height: 120px; 
+            border-radius: 50%; 
+            border: 2px solid black; 
+            overflow: hidden; 
+            flex-shrink: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .photo-container img { 
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover; 
+        }
+
+        .header-text h1 { 
+            font-size: 26px; 
+            margin-bottom: 5px; 
+        }
+
+        .subtitle { 
+            color: #4a6fa5; 
+            font-size: 13px; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+        }
+
+        /* CUERPO PRINCIPAL (Dos columnas) */
+        .main-body { 
+            display: flex; 
+            border-top: 2px solid black; 
+            border-bottom: 2px solid black; 
+        }
+
+        .sidebar { 
+            width: 230px; 
+            border-right: 2px solid black; 
+            padding: 20px; 
+        }
+
+        .content { 
+            flex: 1; 
+            padding: 20px; 
+        }
+
+        /* TÍTULOS Y SECCIONES */
+        h2, h3 { 
+            border-bottom: 1.5px solid black; 
+            padding-bottom: 5px; 
+            margin-bottom: 15px; 
+        }
+
+        h3 { font-size: 17px; }
+        h2 { font-size: 19px; }
+
+        ul { list-style: none; font-size: 13px; }
+        ul li { margin-bottom: 8px; }
+        ul li::before { content: "— "; }
+
+        .job-entry { margin-bottom: 20px; }
+        .job-title { font-weight: bold; font-size: 14px; }
+        .job-date { font-size: 12px; color: #555; margin-bottom: 5px; }
+        .job-desc { font-size: 13px; line-height: 1.5; text-align: justify; }
+
+        /* PIE DE PÁGINA */
+        .footer { 
+            display: flex; 
+            justify-content: space-around; 
+            padding: 15px; 
+            font-size: 13px; 
+        }
+    </style>
+</head>
+<body>
+
+<div class="cv-container">
+    <div class="header">
+        <div class="photo-container">
+            <img src="../assets/fotocv.jpg" alt="Bastián Peña">
+        </div>
+        <div class="header-text">
+            <h1>Bastián Alonso Peña Cárcamo</h1>
+            <p class="subtitle">ESTUDIANTE DE INGENIERÍA EN CIBERSEGURIDAD · INACAP</p>
+        </div>
+    </div>
+
+    <div class="main-body">
+        <div class="sidebar">
+            <div class="side-section">
+                <h3>Tecnologías</h3>
+                <ul>
+                    <li>Computación avanzada</li>
+                    <li>Herramientas digitales</li>
+                    <li>Sistemas informáticos</li>
+                    <li>Aplicaciones móviles</li>
+                </ul>
+            </div>
+            <div class="side-section">
+                <h3>Cursos</h3>
+                <ul>
+                    <li>Ingeniería en Ciberseguridad (en curso)</li>
+                    <li>Ingeniería Civil Mecánica (2023)</li>
+                </ul>
+            </div>
+            <div class="side-section">
+                <h3>Certificaciones</h3>
+                <ul>
+                    <li>Licencia de conducir Clase A</li>
+                    <li>Enseñanza Media Completa (2022)</li>
+                </ul>
+            </div>
+            <div class="side-section">
+                <h3>Idiomas</h3>
+                <ul>
+                    <li>Español — Nativo</li>
+                    <li>Inglés — Avanzado</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="content-section">
+                <h2>Perfil</h2>
+                <p class="job-desc">Persona con capacidad para resolver problemas, flexible, innovadora y entusiasta. Posee habilidades de liderazgo, comunicación oral y escrita, trabajo en equipo, creatividad, buena actitud, administración del tiempo y pensamiento crítico. Desea pertenecer a una empresa importante donde pueda desarrollar todo su potencial.</p>
+            </div>
+
+            <div class="content-section">
+                <h2>Antecedentes Académicos</h2>
+                <div class="job-entry">
+                    <p class="job-title">Ingeniería en Ciberseguridad</p>
+                    <p class="job-date">Instituto Profesional INACAP · 2025 – Actualmente</p>
+                </div>
+                <div class="job-entry">
+                    <p class="job-title">Ingeniería Civil Mecánica (Primer Semestre)</p>
+                    <p class="job-date">Universidad de La Frontera, Temuco · 2023</p>
+                </div>
+                <div class="job-entry">
+                    <p class="job-title">Enseñanza Media Completa</p>
+                    <p class="job-date">Colegio Golden School, Temuco · 2018 – 2022</p>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h2>Antecedentes Laborales</h2>
+                <div class="job-entry">
+                    <p class="job-title">Operario — Hielos Patagonia</p>
+                    <p class="job-date">Marzo 2025 – Presente · Abril 2024 – Agosto 2024</p>
+                    <p class="job-desc">Envasado de productos, etiquetado y distribución de hielos. Trato directo con personal de locales y responsable de remesas.</p>
+                </div>
+                <div class="job-entry">
+                    <p class="job-title">Conductor — Uber</p>
+                    <p class="job-date">2023 – 2024</p>
+                    <p class="job-desc">Movilizándose por toda la ciudad llevando pasajeros y realizando viajes a ciudades cercanas.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="foot-item">📧 bastypc@gmail.com</div>
+        <div class="foot-item">📱 +56 9 29599984</div>
+        <div class="foot-item">🌐 Redes Sociales</div>
+    </div>
+</div>
+
+</body>
+</html>
